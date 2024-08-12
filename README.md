@@ -77,15 +77,20 @@ python act/inference.py --ckpt_dir ~/train0314/
 We will update various robot manipulation methods in the future, including MT-ACT and so on. The methods and models involved are listed below:
 
 Action Chunking with Transformers (ACT): https://github.com/MarkFzp/act-plus-plus
+
 Diffusion Policy (DP): https://github.com/real-stanford/diffusion_policy
+
 Multi-Task ACT (MT-ACT): https://github.com/robopen/roboagent/
+
 Efficientnet-B3: https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet
+
 R3m: https://github.com/facebookresearch/r3m
 
 # 6 License
 The BRMData datasets are both licensed under MIT License
 
 # 7 Citation
+If you find the repository helpful, please consider citing our paper
 ~~~cite
 @inproceedings{zhang2024empowering,
   author    = {Zhang, Tianle and Li, Dongjiang and Li, Yihang and Zeng, Zecui and Zhao, Lin and Sun, Lei and Chen, Yue and Wei, Xuelong and Zhan, Yibing and Li, Lusong and He, Xiaodong},
