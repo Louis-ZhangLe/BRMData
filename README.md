@@ -1,7 +1,7 @@
 # BRMData
-A Bimanual-mobile Robot Manipulation Dataset specifically designed for household applications
+A Bimanual-mobile Robot Manipulation Dataset specifically designed for household applications.
 
-# 1 Environment Setup
+# Environment Setup
 
 1. download
 ~~~python
@@ -18,7 +18,7 @@ catkin_make
 ~~~
 
 
-# 2 Testing
+# Testing
 
 ~~~python
 # 1 setup rule
@@ -42,7 +42,7 @@ roslaunch arm_control arx5v.launch
 ~~~
 
 
-# 3. Collect Data
+# Collect Data
 
 ~~~python
 # 1 start roscore
@@ -55,7 +55,7 @@ roscore
 python collect_data.py --max_timesteps 500 --dataset_dir ./data --episode_idx 0
 ~~~
 
-# 4 Model Train and Inference
+# Model Train and Inference
 
 ~~~python
 # 1 
@@ -73,7 +73,7 @@ cd remote_control
 python act/inference.py --ckpt_dir ~/train0314/
 ~~~
 
-# 5 Methods
+# Methods
 We will update various robot manipulation methods in the future, including MT-ACT and so on. The methods and models involved are listed below:
 
 Action Chunking with Transformers (ACT): https://github.com/MarkFzp/act-plus-plus
@@ -86,10 +86,10 @@ Efficientnet-B3: https://github.com/tensorflow/tpu/tree/master/models/official/e
 
 R3m: https://github.com/facebookresearch/r3m
 
-# 6 License
+# License
 The BRMData datasets are both licensed under MIT License
 
-# 7 Citation
+# Citation
 If you find the repository helpful, please consider citing our paper
 ~~~cite
 @inproceedings{zhang2024empowering,
