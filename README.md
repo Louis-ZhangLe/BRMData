@@ -1,11 +1,11 @@
 # BRMData
 A Bimanual-mobile Robot Manipulation Dataset specifically designed for household applications
 
-# 1 environment setup
+# 1 Environment Setup
 
 1. download
 ~~~python
-git clone https://github.com/agilexrobotics/cobot_magic.git
+git clone https://github.com/Louis-ZhangLe/BRMData.git
 ~~~
 
 2. compilation
@@ -18,7 +18,7 @@ catkin_make
 ~~~
 
 
-# 2. testing
+# 2 Testing
 
 ~~~python
 # 1 setup rule
@@ -42,7 +42,7 @@ roslaunch arm_control arx5v.launch
 ~~~
 
 
-# 3 collect data
+# 3. Collect Data
 
 ~~~python
 # 1 start roscore
@@ -55,7 +55,7 @@ roscore
 python collect_data.py --max_timesteps 500 --dataset_dir ./data --episode_idx 0
 ~~~
 
-# 4 model train and inference
+# 4 Model Train and Inference
 
 ~~~python
 # 1 
@@ -73,7 +73,29 @@ cd remote_control
 python act/inference.py --ckpt_dir ~/train0314/
 ~~~
 
+# 5 Methods
+We will update various robot manipulation methods in the future, including MT-ACT and so on. The methods and models involved are listed below:
+
+Action Chunking with Transformers (ACT): https://github.com/MarkFzp/act-plus-plus
+Diffusion Policy (DP): https://github.com/real-stanford/diffusion_policy
+Multi-Task ACT (MT-ACT): https://github.com/robopen/roboagent/
+Efficientnet-B3: https://github.com/tensorflow/tpu/tree/master/models/official/efficientnet
+R3m: https://github.com/facebookresearch/r3m
+
+# 6 License
+The BRMData datasets are both licensed under MIT License
+
+# 7 Citation
+~~~cite
+@inproceedings{zhang2024empowering,
+  author    = {Zhang, Tianle and Li, Dongjiang and Li, Yihang and Zeng, Zecui and Zhao, Lin and Sun, Lei and Chen, Yue and Wei, Xuelong and Zhan, Yibing and Li, Lusong and He, Xiaodong},
+  title     = {Empowering Embodied Manipulation: A Bimanual-Mobile Robot Manipulation Dataset for Household Tasks},
+  booktitle = {arXiv},
+  year      = {2024},
+}
+~~~
+
+
+
+
 ---
-
-
-We will update various robot manipulation methods in the future, including MT-act and so on.
